@@ -1,0 +1,132 @@
+.banner {
+  padding: 150px 24px 24px 24px;
+  color: #fff;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+
+  margin: 0 auto;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) -20%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(0, 0, 0, 0.8) 120%
+  );
+}
+
+.banner .container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.banner.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.banner img.poster {
+  display: none;
+}
+
+.banner h2 {
+  font-size: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  font-weight: 500;
+  text-shadow: 0 0 8px rgba(38, 38, 38, 0.9);
+  max-width: 500px;
+}
+
+.actions button {
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: rgba(80, 80, 80, 0.8);
+  border: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 12px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: rgba(126, 126, 126, 0.8);
+}
+
+.banner p {
+  line-height: 1.5;
+  padding: 8px;
+
+  width: 500px;
+  max-width: 100%;
+  text-shadow: 0 0 8px rgba(38, 38, 38, 0.7);
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid rgb(90, 90, 90); /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ---------------------------- */
+/* Responsive for devices */
+/* ---------------------------- */
+
+/*  Tablet  */
+@media (max-width: 991px) {
+  .banner {
+    min-height: 400px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Landscape phones  */
+@media (max-width: 767px) {
+  .banner {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(255, 255, 255, 0) 40%
+    );
+    padding-bottom: 12px;
+  }
+  .banner h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .banner p {
+    line-height: 1.3;
+    font-size: 12px;
+    /* background-color: rgba(38, 38, 38, 0.4); */
+  }
+  .banner img.poster {
+    display: block;
+  }
+
+  .banner img.backdrop {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.search {
+  /* padding-top: 64px; */
+  /* position: relative; */
+
+  margin-top: 164px;
+  overflow-x: hidden;
+}
+
+.resultList-section {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.not-found {
+  background-color: #141414;
+  padding: 12px 24px;
+  display: inline-block;
+}
+
+.error {
+  color: #fab005;
+}

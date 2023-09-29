@@ -1,0 +1,63 @@
+.form-container {
+  padding: 0 12px;
+}
+
+.form {
+  margin: 0 auto;
+
+  width: 500px;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.control {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control input {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  padding: 8px;
+  border: 0;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.control input:focus {
+  outline: 0;
+}
+
+.control .icon {
+  width: 24px;
+}
+
+.form hr {
+  height: 2px;
+  border: 0;
+  background-color: #339af0;
+}
+
+.actions {
+  padding: 24px;
+  text-align: end;
+}
+
+.actions button {
+  margin-left: 4px;
+  color: #fff;
+  background-color: #339af0;
+  border: 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button.reset {
+  background-color: #fff;
+  color: #333;
+}

@@ -1,0 +1,128 @@
+/* ---------------------------- */
+/* Common Movies Area */
+/* ---------------------------- */
+
+.movieList {
+  color: #fff;
+  padding: 0 12px;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.movieList h3 {
+  font-size: 20px;
+}
+
+.movieList-content {
+  overflow-x: scroll;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 8px;
+  padding: 12px 8px;
+}
+
+.movieList-content::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.movieList-content::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #151515;
+}
+
+.movieList-content::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #272727;
+}
+
+.movieList .col {
+  flex: 0 0 12%;
+  height: 100%;
+}
+
+.movieList .col:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
+
+.movieList .col.active-movie {
+  transform: scale(1.1);
+  outline: 2px solid #fefefe;
+  margin: 0 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 12px rgba(173, 173, 173, 0.7);
+}
+
+.movieList .col img {
+  display: block;
+  width: 100%;
+  height: 85px;
+}
+
+.error-text {
+  color: #a00707;
+}
+
+/* ---------------------------- */
+/* Original Movies Area */
+/* ---------------------------- */
+
+.movieList.original {
+  margin-top: 0;
+}
+
+.movieList.original .col {
+  flex: 0 0 9.5%;
+  height: 100%;
+}
+
+.movieList.original .col img {
+  width: 100%;
+  height: 180px;
+}
+
+/* ---------------------------- */
+/* Responsive for devices */
+/* ---------------------------- */
+
+/*  Tablet size */
+@media (max-width: 991px) {
+  .movieList.original .col {
+    flex: 0 0 16%;
+  }
+
+  .movieList .col {
+    flex: 0 0 20%;
+  }
+}
+
+/* Landscape phones  */
+@media (max-width: 767px) {
+  .movieList {
+    padding: 12px 12px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .movieList h3 {
+    font-size: 18px;
+  }
+  .movieList.original .col {
+    flex: 0 0 20%;
+  }
+
+  .movieList .col {
+    flex: 0 0 25%;
+  }
+
+  .movieList .col img {
+    width: 100%;
+    height: 80px;
+  }
+  .movieList.original .col img {
+    width: 100%;
+    height: 150px;
+  }
+}

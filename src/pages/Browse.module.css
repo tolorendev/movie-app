@@ -1,0 +1,16 @@
+/* .browse {
+  margin-top: 64px;
+} */
+
+.movieList-section {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+@media (max-width: 575px) {
+  .movieList-section {
+    padding: 24px 0;
+  }
+}

@@ -1,0 +1,49 @@
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+.navbar.background2 {
+  background-color: #040404;
+  box-shadow: 0 2px 8px rgba(44, 44, 44, 0.6);
+}
+
+.navbar .container {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.navbar h1 {
+  font-size: 28px;
+  color: #e20000;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar .search {
+  display: flex;
+  width: 26px;
+  height: auto;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+}
+
+/* ---------------------------- */
+/* Responsive for devices */
+/* ---------------------------- */
+
+/*  Mobile Phones  */
+@media (max-width: 575px) {
+  .navbar h1 {
+    font-size: 24px;
+  }
+}
